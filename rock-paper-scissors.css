@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #292c34;
+}
+header{
+    background-color: white;
+    padding: 20px;
+}
+
+header h1{
+    color: #25272e;
+    text-align: center;
+    font-family: Asap,sans-serif;
+}
+.score-board{
+    border: 3px solid white;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    font-size: 30px;
+    font-family: asap,sans-serif;
+    position: relative;
+}
+.badge{
+    background-color: #e2584d;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+#user-label{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+     /* it will position the elelment in browsers top left corner. if we want to positon it on the parent div top left corner.so, we will give positioning of parent div other than static and inherit. */
+     position: absolute;
+    top: 25px;
+    left: -20px;
+}
+#computer-label{
+    position: absolute;
+    top: 25px;
+    right: -40px;
+}
+.result{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: asap, sans-serif;
+}
+.choices{
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.r{
+    margin: 0px 20px;
+}
+.r:hover{
+    cursor: pointer;
+    background-color: #24272e;
+    transition:all  0.5s ease;
+    border-radius: 30px;
+}
+.choice{
+    border: 4px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+
+}
+#action-message{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: asap, sans-serif;
+    color: whitesmoke;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.green-glow{
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+.red-glow{
+    border: 4px solid #f21c1b;
+    box-shadow: 0 0 10px #d01115;
+}
+.grey-glow{
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px #fff;
+}
